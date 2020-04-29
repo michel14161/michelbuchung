@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+
+body {
+    margin: 0 auto; 
+    font: normal 1em Kristen ITC, sans-serif;  /* Mindestschriftgröße wird dem Browser, bzw. dem Nutzer überlassen! */
+	color: white;
+	background:
+	radial-gradient(black 15%, transparent 16%) 0 0,
+	radial-gradient(black 15%, transparent 16%) 8px 8px,
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+	background-color:#282828;
+	background-size:16px 16px;
+}
+
+header {
+	max-width: 80em;
+	color:white;
+	background: #eee;
+	margin: 0 auto 1.6em;
+	position: relative;
+}
+
+header::after {
+	position: absolute;
+	content: "";
+	background: linear-gradient(to top, #feb040 25%, #282523 25%, #282523 50%, #34a2da 50%, #34a2da 75%, #0e76bc 75%);
+	height: 1.6em;
+	left: 0;
+	right: 0;
+	bottom: -1.6em;
+}
+
+header h1 {
+	padding: 0;
+}
+
+main {
+	display: block;   /*für IE9-11 */	
+	max-width: 70em;
+	position:relative;
+	padding:0 20px 0;
+	margin: 0 auto;
+	background: white;
+	color: #333;
+	text-align: center;
+}
+
+main>h3{
+	float: left;
+}
+
+h2, h3{
+	color:black;
+	font-family: "Kristen ITC";
+}
+
+h1{
+	color:black;
+	font-family: "Kristen ITC";
+	text-align: center;
+	padding: 5px 5px 0px 5px;
+}
+
+p {
+	color: black;
+	font-family: "Kristen ITC"
+}
+
+
+
+nav ul {
+	list-style: none;
+	text-align: center;
+}
+nav ul li {
+	display: inline-block;
+}
+nav ul li a {
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+	color: #aaa;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+	transition: all .5s;
+}
+nav ul li a:hover {
+	color: #555;
+}
+
+nav ul li a {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+nav ul li a:after {
+	display: block;
+	position: absolute;
+	margin: 0;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	content: '.';
+	color: transparent;
+	width: 1px;
+	height: 1px;
+	border-radius: 50%;
+	background: transparent;
+}
+nav ul li a:hover:after {
+	-webkit-animation: circle 1.5s ease-in forwards;
+}
+
+a {
+	color: skyblue;
+}
+
+.container{
+	background
+}
+
+div>img{
+	height:500px;
+	width:850px;
+}
+
+img{
+	height:500px;
+	width:850px;
+}
+
+footer {
+	position:relative;
+	display:table-cell;
+	vertical-align:middle;
+	width:100vw;
+	height:5em;
+	text-align:center;
+}
+
+footer>p{
+	color: white;
+}
+
+main>a{
+	color: black;
+}

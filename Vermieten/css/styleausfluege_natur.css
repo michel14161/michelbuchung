@@ -1,0 +1,53 @@
+﻿body{
+	background:black;
+}
+
+h1, h2 ,h3 {
+	color: yellow;
+}
+
+p{
+	color: pink;
+}
+
+a {
+	color: white;
+	font-family: "fraktur";
+	}
+			
+
+nav ul {
+	list-style-type: none;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 20px;
+	}
+			
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	font-weight:hold;
+	}
+			
+nav ul li{
+	display: inline-block;
+	border-radius: 3px;
+	margin-right: 15px;
+	background: red;
+	}
+			
+nav li a:link{
+	color: red;
+	}
+			
+nav li a:visited{
+	color: white;
+	}
+			
+nav li a:hover{
+	color: yellow;
+	}
+			
+nav li a:active{
+	color: green;
+	}
